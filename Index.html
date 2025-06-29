@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Andhra Pradesh</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+            /* Light gray background */
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+            /* Space for the underline */
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%;
+            /* Adjust width as needed */
+            height: 4px;
+            background-color: #3B82F6;
+            /* Tailwind blue-500 */
+            border-radius: 2px;
+        }
+        /* Custom scrollbar for better aesthetics */
+        
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 rounded-md p-2">Andhra Tourism</a>
+            <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
+                <li><a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 rounded-md p-2">Home</a></li>
+                <li><a href="#places" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 rounded-md p-2">Places</a></li>
+                <li><a href="#traditions" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 rounded-md p-2">Traditions</a></li>
+                <li><a href="#food" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 rounded-md p-2">Food</a></li>
+                <li><a href="#booking" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 rounded-md p-2">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 overflow-hidden">
+        <!-- Placeholder for background image. Replace 'https://placehold.co/1920x1080/0000FF/FFFFFF?text=Andhra+Pradesh+Landscape' with your image URL -->
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1920x1080/0000FF/FFFFFF?text=Andhra+Pradesh+Landscape');"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                Experience the Vibrancy of Andhra Pradesh
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 animate-fade-in-up">
+                Discover ancient temples, serene beaches, rich cultural heritage, and delectable cuisine in the heart of South India.
+            </p>
+            <a href="#places" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform duration-300 transform hover:scale-105">
+Explore Now
+</a>
+        </div>
+    </section>
+
+    <!-- Tourist Places Section -->
+    <section id="places" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto w-fit">Must-Visit Tourist Places</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Place 1: Tirupati - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Tirupati' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Tirupati" alt="Tirupati Temple" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tirupati - The Abode of Lord Venkateswara</h3>
+                        <p class="text-gray-600 text-sm">
+                            Home to the revered Sri Venkateswara Swamy Temple, one of the most visited pilgrimage centers in the world. Its serene hills and spiritual aura attract millions.
+                        </p>
+                    </div>
+                </div>
+                <!-- Place 2: Visakhapatnam - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Vizag+Beach' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Vizag+Beach" alt="Visakhapatnam Beach" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Visakhapatnam - The City of Destiny</h3>
+                        <p class="text-gray-600 text-sm">
+                            A picturesque coastal city with beautiful beaches like Ramakrishna Beach and Rishikonda, submarine museum, and lush green hills.
+                        </p>
+                    </div>
+                </div>
+                <!-- Place 3: Araku Valley - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Araku+Valley' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Araku+Valley" alt="Araku Valley" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Araku Valley - Hill Station Paradise</h3>
+                        <p class="text-gray-600 text-sm">
+                            Nestled in the Eastern Ghats, this charming hill station offers stunning landscapes, tribal culture, coffee plantations, and Borra Caves.
+                        </p>
+                    </div>
+                </div>
+                <!-- Place 4: Amaravati - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Amaravati' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Amaravati" alt="Amaravati Stupa" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Amaravati - Historical Capital</h3>
+                        <p class="text-gray-600 text-sm">
+                            An ancient city with rich Buddhist heritage, known for the Amaravati Stupa and the Dhyana Buddha statue. A hub for historical exploration.
+                        </p>
+                    </div>
+                </div>
+                <!-- Place 5: Lepakshi - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Lepakshi' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Lepakshi" alt="Lepakshi Temple" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Lepakshi - Architectural Marvel</h3>
+                        <p class="text-gray-600 text-sm">
+                            Famous for the Veerabhadra Temple, known for its exquisite Vijayanagara style architecture, mural paintings, and the monolithic Nandi statue.
+                        </p>
+                    </div>
+                </div>
+                <!-- Place 6: Papikondalu - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Papikondalu' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Papikondalu" alt="Papikondalu River Cruise" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Papikondalu - Riverine Beauty</h3>
+                        <p class="text-gray-600 text-sm">
+                            A breathtaking gorge on the Godavari river, offering serene boat rides amidst lush green hills. A perfect escape for nature lovers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traditions Section -->
+    <section id="traditions" class="py-16 md:py-24 bg-blue-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto w-fit">Rich Traditions & Culture</h2>
+            <div class="flex flex-col lg:flex-row items-center lg:space-x-12">
+                <!-- Placeholder for Traditions image. Replace 'https://placehold.co/700x500/0000FF/FFFFFF?text=Kuchipudi+Dance' with your image URL -->
+                <div class="lg:w-1/2 mb-8 lg:mb-0 rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/700x500/0000FF/FFFFFF?text=Kuchipudi+Dance" alt="Kuchipudi Dance" class="w-full h-auto object-cover">
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        Andhra Pradesh boasts a vibrant tapestry of traditions, deeply rooted in its history and spirituality. The state is renowned for its classical dance form, <span class="font-semibold text-blue-700">Kuchipudi</span>, which originated
+                        in the village of Kuchipudi. This dance narrates mythological stories through intricate footwork, expressive gestures, and dramatic portrayals.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        The state's festivals are celebrated with immense fervor and devotion. <span class="font-semibold text-blue-700">Sankranti</span>, the harvest festival, is a grand affair marked by colorful Rangoli (Muggulu) designs, kite flying,
+                        and traditional delicacies. Other significant festivals include Ugadi (Telugu New Year), Dasara, and Diwali, each celebrated with unique customs and rituals that highlight the community's spirit.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Handicrafts like <span class="font-semibold text-blue-700">Kalamkari</span> paintings from Srikalahasti and Machilipatnam, known for their intricate designs and natural dyes, and <span class="font-semibold text-blue-700">Kondapalli toys</span>                        are testament to the state's artistic prowess. Traditional music, folk arts, and a strong emphasis on family values complete the cultural mosaic of Andhra Pradesh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Food Section -->
+    <section id="food" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto w-fit">Savor Andhra's Flavors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Food 1: Pulao/Biryani - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Andhra+Biryani' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Andhra+Biryani" alt="Andhra Biryani" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Andhra Biryani/Pulao</h3>
+                        <p class="text-gray-600 text-sm">
+                            Known for its spicy and aromatic preparation, often made with chicken or mutton, and generously spiced with local chilies and masalas.
+                        </p>
+                    </div>
+                </div>
+                <!-- Food 2: Pesarattu - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Pesarattu' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Pesarattu" alt="Pesarattu" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pesarattu - Green Gram Dosa</h3>
+                        <p class="text-gray-600 text-sm">
+                            A healthy and delicious dosa made from green gram batter, often served with ginger chutney (Allam Pachadi) and Upma.
+                        </p>
+                    </div>
+                </div>
+                <!-- Food 3: Gongura Pachadi - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Gongura+Pachadi' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Gongura+Pachadi" alt="Gongura Pachadi" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Gongura Pachadi - Sorrel Leaf Chutney</h3>
+                        <p class="text-gray-600 text-sm">
+                            A staple in Andhra cuisine, this tangy and spicy chutney made from sorrel leaves is a true delight for the taste buds.
+                        </p>
+                    </div>
+                </div>
+                <!-- Food 4: Pootharekulu - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Pootharekulu' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Pootharekulu" alt="Pootharekulu" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pootharekulu - Paper Sweet</h3>
+                        <p class="text-gray-600 text-sm">
+                            A traditional sweet from Atreyapuram, made of thin, paper-like layers of rice starch, sugar/jaggery, and ghee, often with nuts.
+                        </p>
+                    </div>
+                </div>
+                <!-- Food 5: Ulava Charu - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Ulava+Charu' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Ulava+Charu" alt="Ulava Charu" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ulava Charu - Horse Gram Soup</h3>
+                        <p class="text-gray-600 text-sm">
+                            A thick, flavorful soup made from horse gram, known for its unique taste and often served with cream or butter.
+                        </p>
+                    </div>
+                </div>
+                <!-- Food 6: Bobbatlu - Replace 'https://placehold.co/600x400/0000FF/FFFFFF?text=Bobbatlu' with your image URL -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/600x400/0000FF/FFFFFF?text=Bobbatlu" alt="Bobbatlu" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Bobbatlu / Puran Poli</h3>
+                        <p class="text-gray-600 text-sm">
+                            A sweet flatbread made with chana dal and jaggery stuffing, often flavored with cardamom and ghee. A popular festive treat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticket Booking Section -->
+    <section id="booking" class="py-16 md:py-24 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 section-title mx-auto w-fit text-white">Book Your Andhra Adventure</h2>
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-xl shadow-lg text-gray-800">
+                <form id="bookingForm" class="space-y-6">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="john.doe@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="+91 9876543210" required>
+                    </div>
+                    <div>
+                        <label for="package" class="block text-sm font-medium text-gray-700 mb-2">Choose Your Package</label>
+                        <select id="package" name="package" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white" required>
+<option value="">Select a package</option>
+<option value="spiritual-tirupati">Spiritual Tirupati Tour (3 Days)</option>
+<option value="vizag-beach-delight">Vizag Coastal Retreat (4 Days)</option>
+<option value="araku-nature-expedition">Araku Valley Nature Expedition (3 Days)</option>
+<option value="andhra-heritage-trail">Andhra Heritage Trail (5 Days)</option>
+</select>
+                    </div>
+                    <div>
+                        <label for="travelDate" class="block text-sm font-medium text-gray-700 mb-2">Preferred Travel Date</label>
+                        <input type="date" id="travelDate" name="travelDate" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white" required>
+                    </div>
+                    <div>
+                        <label for="numGuests" class="block text-sm font-medium text-gray-700 mb-2">Number of Guests</label>
+                        <input type="number" id="numGuests" name="numGuests" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" value="1" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md shadow-md transition-colors duration-300 transform hover:scale-105">
+Book Now
+</button>
+                </form>
+                <!-- Booking Confirmation Message Box -->
+                <div id="bookingMessage" class="hidden mt-6 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-md relative" role="alert">
+                    <strong class="font-bold">Success!</strong>
+                    <span class="block sm:inline" id="messageText">Your booking request has been received. We will contact you shortly!</span>
+                    <span class="absolute top-0 bottom-0 right-0 px-4 py-3 cursor-pointer" onclick="document.getElementById('bookingMessage').classList.add('hidden')">
+<svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>Close</title><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.103l-2.651 3.746a1.2 1.2 0 1 1-1.697-1.697l2.758-3.892-2.758-3.892a1.2 1.2 0 1 1 1.697-1.697L10 8.103l2.651-3.746a1.2 1.2 0 1 1 1.697 1.697L11.103 10l3.746 2.651a1.2 1.2 0 0 1 0 1.697z"/></svg>
+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Andhra Tourism. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><img src="https://placehold.co/24x24/FFFFFF/000000?text=FB" alt="Facebook" class="w-6 h-6 rounded-full"></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><img src="https://placehold.co/24x24/FFFFFF/000000?text=IG" alt="Instagram" class="w-6 h-6 rounded-full"></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><img src="https://placehold.co/24x24/FFFFFF/000000?text=TW" alt="Twitter" class="w-6 h-6 rounded-full"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Handle form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form data
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const packageName = document.getElementById('package').options[document.getElementById('package').selectedIndex].text;
+            const travelDate = document.getElementById('travelDate').value;
+            const numGuests = document.getElementById('numGuests').value;
+
+            // Simple validation (can be expanded)
+            if (!fullName || !email || !phone || !packageName || !travelDate || !numGuests) {
+                document.getElementById('bookingMessage').classList.remove('bg-green-100', 'border-green-400', 'text-green-700');
+                document.getElementById('bookingMessage').classList.add('bg-red-100', 'border-red-400', 'text-red-700');
+                document.getElementById('messageText').textContent = 'Please fill in all required fields.';
+                document.getElementById('bookingMessage').classList.remove('hidden');
+                return;
+            }
+
+            // In a real application, you would send this data to a server
+            // For this static website, we'll just show a success message.
+            console.log('Booking Details:', {
+                fullName,
+                email,
+                phone,
+                packageName,
+                travelDate,
+                numGuests
+            });
+
+            // Show success message
+            document.getElementById('bookingMessage').classList.remove('bg-red-100', 'border-red-400', 'text-red-700');
+            document.getElementById('bookingMessage').classList.add('bg-green-100', 'border-green-400', 'text-green-700');
+            document.getElementById('messageText').textContent = `Thank you, ${fullName}! Your booking for "${packageName}" on ${travelDate} for ${numGuests} guest(s) has been received. We will contact you at ${email} shortly.`;
+            document.getElementById('bookingMessage').classList.remove('hidden');
+
+            // Clear the form (optional)
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>
