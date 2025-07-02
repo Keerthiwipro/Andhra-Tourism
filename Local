@@ -1,0 +1,2 @@
+REM This copies my-file.txt from the source_folder to the destination_folder
+copy "C:\path\to\your\source_folder\my-file.txt" "C:\path\to\your\destination_folder\"
